@@ -4,8 +4,8 @@ class Solution {
         int[] countp = new int[26];
         int[] counts = new int[26];
         List<Integer> result = new ArrayList<>();
-        for(char c : p.toCharArray()){
-            countp[c - 'a']++;
+        for(char ch : p.toCharArray()){
+            countp[ch - 'a']++;
         }
         for(int i=0;i<s.length();i++){
             counts[s.charAt(i) - 'a']++;
