@@ -1,5 +1,4 @@
 import java.util.*;
-class Solution {
     public int numRescueBoats(int[] people, int limit) {
         Arrays.sort(people);
         int l = 0;
