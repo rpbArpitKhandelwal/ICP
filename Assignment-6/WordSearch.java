@@ -35,23 +35,4 @@ public class WordSearch {
         board[row][col] = temp;
         return flag;
     }
-
-    public static void main(String[] args) {
-        char[][] board1 = {
-            {'A','B','C','E'},
-            {'S','F','C','S'},
-            {'A','D','E','E'}
-        };
-
-        System.out.println("ABCCED -> " + exist(board1, "ABCCED")); // true
-        System.out.println("SEE -> " + exist(board1, "SEE"));       // true
-        System.out.println("ABCB -> " + exist(board1, "ABCB"));     // false
-
-        char[][] board2 = {
-            {'A','B'},
-            {'C','D'}
-        };
-
-        System.out.println("ACDB -> " + exist(board2, "ACDB"));     // true
-    }
 }
